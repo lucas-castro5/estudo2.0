@@ -2,11 +2,11 @@ package Matrizes;
 
 import java.util.Scanner;
 
-public class testeMatrizes {
+public class somaLinhas {
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         int[][] matriz = new int[5][5];
+        double [] vetor = new double[5];
 
         System.out.print("Digite a qtd de linhas: ");
         int linhas = sc.nextInt();
@@ -15,19 +15,23 @@ public class testeMatrizes {
 
 
         for (int i = 0; i < linhas; i++) {
+            System.out.printf("Digite os elementos da %da. linha: %n",i+1);
             for (int j = 0; j < coluna; j++) {
-                System.out.println("Elemento ["+i + "," + j +"]: ");
                 matriz[i][j] = sc.nextInt();
             }
         }
 
 
-        System.out.println("Matriz: ");
         for (int i = 0; i < linhas; i++) {
+            vetor[i] = 0;
             for (int j = 0; j < coluna; j++) {
-                System.out.print(matriz[i][j] + " ");
+                vetor[i] += matriz[i][j];
             }
-            System.out.println();
+
+        }
+        System.out.println("Vetor gerado: ");
+        for (int i = 0; i<linhas; i++){
+            System.out.printf("%.2f%n",vetor[i]);
         }
     }
 }

@@ -24,7 +24,6 @@ public class alturas {
             altura[i] = num;
             System.out.println();
             soma += altura[i];
-
         }
         System.out.print("Relatorio ");
 
