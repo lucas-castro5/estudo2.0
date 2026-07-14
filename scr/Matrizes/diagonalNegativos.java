@@ -11,9 +11,11 @@ public class diagonalNegativos {
 
         System.out.print("Digite a ordem da matriz: ");
         int ordem = sc.nextInt();
+
+
         for (int i = 0; i < ordem; i++) {
             for (int j = 0; j < ordem; j++) {
-                System.out.println("Elemento ["+i + "," + j +"]: ");
+                System.out.println("Elemento [" + i + "," + j + "]: ");
                 matriz[i][j] = sc.nextInt();
             }
         }
@@ -30,12 +32,12 @@ public class diagonalNegativos {
 
         for (int i = 0; i < ordem; i++) {
             for (int j = 0; j < ordem; j++) {
-                if (matriz[i][j]<0){
-                    count+=1;
+                if (matriz[i][j] < 0) {
+                    count += 1;
                 }
             }
 
         }
-        System.out.println("Quantidade de negativos = "+count);
-}
+        System.out.println("Quantidade de negativos = " + count);
+    }
 }

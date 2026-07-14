@@ -16,7 +16,7 @@ public class testeMatrizes {
 
         for (int i = 0; i < linhas; i++) {
             for (int j = 0; j < coluna; j++) {
-                System.out.println("Elemento ["+i + "," + j +"]: ");
+                System.out.println("Elemento [" + i + "," + j + "]: ");
                 matriz[i][j] = sc.nextInt();
             }
         }
