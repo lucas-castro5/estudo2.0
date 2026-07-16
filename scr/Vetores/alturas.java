@@ -12,6 +12,8 @@ public class alturas {
         double[] altura = new double[10];
         String[] nomes = new String[10];
         double[] idade = new double[10];
+
+
         for (int i = 0; i < N; i++){
             System.out.printf("Dados da %da Pessoa",i + 1);
             System.out.println();
